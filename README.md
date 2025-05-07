@@ -203,3 +203,12 @@ código en tu rama
 Elimina las marcas `<<<<`, `====`, `>>>>>` y dejar el codigo correcto
 
 Luego de eso agrega el archivo de nuevo con `git add` y un commit `git commit`
+
+## Después de hacer eso puedo y/o debería eliminar la rama?
+Si, de hecho una buena practica es eliminar las ramas, para eso usa:
+
+`git branch -d <nombre-de-rama>` esto elimina la rama local, la que esta tu computadora
+
+`git push origin --delete <nombre-de-rama>` esto elimina la rama remota
+
+> No eliminaré la rama de la explicación por temas de documentación xd

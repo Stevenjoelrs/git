@@ -109,4 +109,32 @@ Vale, expliqué qué es el estado commited, pero no qué es un commit, un commit
 * La fecha y hora en la que se hizo el commit
 * La descripcion de los cambios de ese commit
 
- 
+## Mmm ya... mi idea ahora es realizar un cambio al proyecto pero no quiero afectarlo directamente aún, que deberia de hacer?
+
+Lo que debes de hacer primero es saber qué son las ramas en git, una rama es una version separada de la linea principal de proyecto, al estar separada y ser independiente cualquier cambio que hagas no afecta en al proyecto principal, asi es mas dificil que existan errores molestos
+
+Estas ramas las puedes usar para agregar funcionalidades o arreglar errores, es escencial usar las ramas para esto ya que mantienen un orden en el proyecto
+
+## Ahora... como veo que ramas tengo en este momento?
+dentro de la carpeta del proyecto usa:
+
+`git branch` que muestra tus ramas locales
+
+`git branch -a` que muestra todas tus ramas, incluyendo las remotas
+
+deberia de salirte algo similar a esto:
+
+```
+❯ git branch -a
+* feat/EfectoMalDeChagas
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feat/EfectoMalDeChagas
+  remotes/origin/feat/item-de-curacion
+  remotes/origin/feature/vinchuca-mob
+  remotes/origin/main
+```
+
+Si notas, al inicio hay un asterisco en la rama `feat/EfectoMalDeChagas`, esto es porque actualmente me encuentro haciendo cambios en esa rama.
+
+Y también se pueden ver las demas ramás creadas por compañeros de grupo xd

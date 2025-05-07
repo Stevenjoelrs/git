@@ -134,7 +134,72 @@ deberia de salirte algo similar a esto:
   remotes/origin/feature/vinchuca-mob
   remotes/origin/main
 ```
-
 Si notas, al inicio hay un asterisco en la rama `feat/EfectoMalDeChagas`, esto es porque actualmente me encuentro haciendo cambios en esa rama.
 
 Y también se pueden ver las demas ramás creadas por compañeros de grupo xd
+
+
+## Qué es lo que dice ahí como ¨HEAD¨?
+en un commit, el HEAD indica donde te ubicas, en los ejemplos de los commits se puede ver que el HEAD señala a la rama en la que estaba trabajando
+
+```
+❯ git log
+commit 778f85f3394dbf48280a053fce6b259cd9e90cd5 (HEAD -> feat/EfectoMalDeChagas, origin/feat/EfectoMalDeChagas)
+```
+## Vale ahora creemos una rama nueva
+para eso haremos:
+
+`git branch <nombre-rama>`
+
+y nos movemos a esa rama:
+
+`git switch <nombre-rama>`
+
+> De hecho ésta informacién está hecha desde una rama diferente a la principal
+
+## Vale ahora quiero que mis cambios sean integrados a la rama principal?
+Una vez que hayas terminado tus cambios, realiza lo siguiente:
+
+cambia a tu rama principal:
+`git switch main`
+
+revisar que tienes la version más actualizada del main:
+
+`git pull origin main`
+
+> Un momento, que es eso de pull?
+> En git existen los comandos `pull` y `push`, que como su traduccion lo dice uno jala la informacion, en > > este caso al main, y el `push` empuja la informacion como será en este caso de la rama que se creó a la main
+
+continuemos...
+
+Ahora toca fusionar la rama con el main:
+
+`git merge <nombre-de-tu-rama>`
+
+en mi caso sería:
+
+`git merge feat/EfectoMalDeChagas`
+
+y si quieres subirlo a tu repo remoto haces esto:
+
+`git push origin main`
+
+## Y que pasa si existen conflictos? pregunto por un amigo, no es como que me haya pasado xd
+
+En el caso de que haya un conflicto Git te avisará al momento de la fusion.
+
+primero usa `git status` para ver que archivos tienen los conflictos.
+
+Cuando abras los archivos se verá algo similar a esto:
+```
+<<<<<<< HEAD
+código en la rama main
+=======
+código en tu rama
+>>>>>>> feat/EfectoMalDeChagas
+
+```
+
+Elimina las marcas `<<<<`, `====`, `>>>>>` y dejar el codigo correcto
+
+Luego de eso agrega el archivo de nuevo con `git add` y un commit `git commit`

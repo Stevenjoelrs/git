@@ -212,3 +212,15 @@ Si, de hecho una buena practica es eliminar las ramas, para eso usa:
 `git push origin --delete <nombre-de-rama>` esto elimina la rama remota
 
 > No eliminaré la rama de la explicación por temas de documentación xd
+
+# Flujos de trabajo
+Los flujos de trabajo son maneras de organizar nuestras ramas y archivos durante el trabajo en equipo en un repositorio remoto
+
+Una manera de organizar es darle prefijos a nuestras ramas:
+
+1. Main: Contiene el codigo en produccion, almacena el historial de lanzamientos (no se toca directamente esta rama, solo para hotfix)
+2. Develop: Esta rama nace directamente del main y contiene el codigo en pre-produccion,sirve como una rama de integracion para las caracteristicas.
+3. Feature: Estas ramas nacen de los develop, aqui se integran funcionalidades.
+4. Release: Se crean para preparar/mantener/registrar lanzamientos. Las correciones de errores deben ser aplicadas a esta rama antes de fusionarlas con el main.
+5. Hotfix: Puede llegar a generar confusion con la rama Release pero la diferencia clave es que estas se crean directamente del main y corrigen errores puntuales en este, posteriormente se fusionan con el main y develop.
+

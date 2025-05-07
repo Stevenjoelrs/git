@@ -224,3 +224,22 @@ Una manera de organizar es darle prefijos a nuestras ramas:
 4. Release: Se crean para preparar/mantener/registrar lanzamientos. Las correciones de errores deben ser aplicadas a esta rama antes de fusionarlas con el main.
 5. Hotfix: Puede llegar a generar confusion con la rama Release pero la diferencia clave es que estas se crean directamente del main y corrigen errores puntuales en este, posteriormente se fusionan con el main y develop.
 
+## Y esos prefijos, también los puedo usar en commits?
+
+Sii, pero... bueno hay ciertas reglas/consejos que deberias seguir para que tengas mejores commits, te dare algunos ejemplos de ellas:
+
+* Hace tus commits en verbo imperativo.
+* No uses punto final ni suspensivos en tus commits.
+* Maximo 50 caracteres, tipo mantente en un margen cerca de 50 no pasa nada si te pasas por un poco.
+* Añade el contexto necesario.
+* Usa prefijos para especificar que tipo de commit es ejemplo:
+  * `feat`: Una nueva característica para el usuario.
+  * `fix`: Arregla un bug que afecta al usuario.
+  * `perf`: Cambios que mejoran el rendimiento del sitio.
+  * `build`: Cambios en el sistema de build, tareas de despliegue o instalación.
+  * `ci`: Cambios en la integración continua.
+  * `docs`: Cambios en la documentación.
+  * `refactor`: Refactorización del código como cambios de nombre de variables o funciones.
+  * `style`: Cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
+  * `test`: Añade tests o refactoriza uno existente.
+

@@ -2,18 +2,29 @@
 
 ![](images/git.png)
 
+### Tabla de Contenidos
+
+1. [Control de versiones](#control-de-versiones)
+2. [Qué es git?](#qué-es-git)
+    - [Qué es un repositorio](#y-qué-es-un-repositorio)
+3. [Creacion de un proyecto en Git](#creación-de-un-proyecto-en-git)
+4. [Estados de git](#estados-de-git)
+5. [Ramas de git](#mmm-ya-mi-idea-ahora-es-realizar-un-cambio-al-proyecto-pero-no-quiero-afectarlo-directamente-aún-que-deberia-de-hacer)
+6. [Flujos de trabajo](#flujos-de-trabajo)
+
+
 ## Control de versiones
 El control de versiones es un sistema que nos permite tener un historial de los cambios realizados en un proyecto, saber cuándo y quién hizo los cambios
 
 Esto es muy importante ya que nos permiten tener un mejor control, con la posibilidad de revertir errores, tener una colaboracion en equipo mas eficiente y flexible
 
-## Que es Git?
+## Qué es Git?
 Un sistema de control de versiones que aloja una copia del repo de manera local para luego subirlo a uno remoto para la colaboracion con terceros
 
 ## Y... qué es un repositorio?
 un repositorio es donde se almacena las diferentes versiones de un proyecto, donde puede verse quienes hicieron los cambios y cuando los hicieron
 
-# Creacion de un proyecto en Git
+# Creación de un proyecto en Git
 para iniciar un proyecto de manera correcta primero se debe de tener ya un entorno con las capetas creadas localmente, una vez dentro de la carpeta que almacenara nuestro proyecto se usa:
 
 `git init ¨<nombre-de-proyecto>¨`

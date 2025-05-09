@@ -1,5 +1,7 @@
 # Curso git/Github
 
+![](images/git.png)
+
 ## Control de versiones
 El control de versiones es un sistema que nos permite tener un historial de los cambios realizados en un proyecto, saber cuándo y quién hizo los cambios
 
@@ -71,6 +73,8 @@ Para lo que es el commit podemos usar:
 
 con esto debes de dejar una descripcion breve sobre los cambios que se hacen en este punto de guardado
 
+![](images/Git-Working-Tree.png)
+
 ## Mmm ya... pero cómo puedo asegurarme que el commit se hizo?
 Para eso se usa:
 
@@ -114,7 +118,7 @@ Vale, expliqué qué es el estado commited, pero no qué es un commit, un commit
 Lo que debes de hacer primero es saber qué son las ramas en git, una rama es una version separada de la linea principal de proyecto, al estar separada y ser independiente cualquier cambio que hagas no afecta en al proyecto principal, asi es mas dificil que existan errores molestos
 
 Estas ramas las puedes usar para agregar funcionalidades o arreglar errores, es escencial usar las ramas para esto ya que mantienen un orden en el proyecto
-
+![](images/git-branches-merge.png)
 ## Ahora... como veo que ramas tengo en este momento?
 dentro de la carpeta del proyecto usa:
 

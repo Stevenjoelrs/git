@@ -157,7 +157,7 @@ y nos movemos a esa rama:
 
 > De hecho ésta informacién está hecha desde una rama diferente a la principal
 
-## Vale ahora quiero que mis cambios sean integrados a la rama principal?
+## Vale ahora quiero que mis cambios sean integrados a la rama principal, cómo lo hago?
 Una vez que hayas terminado tus cambios, realiza lo siguiente:
 
 cambia a tu rama principal:

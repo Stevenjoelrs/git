@@ -124,6 +124,14 @@ Vale, expliqué qué es el estado commited, pero no qué es un commit, un commit
 * La fecha y hora en la que se hizo el commit
 * La descripcion de los cambios de ese commit
 
+## Qué es lo que dice ahí como ¨HEAD¨?
+En un commit, el HEAD indica donde te ubicas, en los ejemplos de los commits se puede ver que el HEAD señala a la rama en la que estaba trabajando
+
+```
+❯ git log
+commit 778f85f3394dbf48280a053fce6b259cd9e90cd5 (HEAD -> feat/EfectoMalDeChagas, origin/feat/EfectoMalDeChagas)
+```
+
 ## Mmm ya... mi idea ahora es realizar un cambio al proyecto pero no quiero afectarlo directamente aún, que deberia de hacer?
 
 Lo que debes de hacer primero es saber qué son las ramas en git, una rama es una version separada de la linea principal de proyecto, al estar separada y ser independiente cualquier cambio que hagas no afecta en al proyecto principal, asi es mas dificil que existan errores molestos
@@ -153,14 +161,6 @@ Si notas, al inicio hay un asterisco en la rama `feat/EfectoMalDeChagas`, esto e
 
 Y también se pueden ver las demas ramás creadas por compañeros de grupo xd
 
-
-## Qué es lo que dice ahí como ¨HEAD¨?
-en un commit, el HEAD indica donde te ubicas, en los ejemplos de los commits se puede ver que el HEAD señala a la rama en la que estaba trabajando
-
-```
-❯ git log
-commit 778f85f3394dbf48280a053fce6b259cd9e90cd5 (HEAD -> feat/EfectoMalDeChagas, origin/feat/EfectoMalDeChagas)
-```
 ## Vale ahora creemos una rama nueva
 para eso haremos:
 
